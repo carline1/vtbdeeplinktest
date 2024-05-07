@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deeplink</title>
+</head>
+<body>
+  <a href="app://undo" onclick="redirectToStore()">Open Undo app</a>
+  <a href="https://new.undo.be/apps/android" onclick="redirectToStore2()">Open Undo app with new.undo.be/apps/android</a>
+
+  <script>
+    function redirectToStore() {
+      setTimeout(function() {
+        window.location.href = 'https://play.google.com/store/apps/details?id=be.undo.app';
+      }, 100);
+
+      window.location.href = 'app://undo';
+    }
+    function redirectToStore2() {
+      setTimeout(function() {
+        window.location.href = 'https://play.google.com/store/apps/details?id=be.undo.app';
+      }, 100);
+
+      window.location.href = 'https://new.undo.be/apps/android';
+    }
+  </script>
+</body>
+</html>
