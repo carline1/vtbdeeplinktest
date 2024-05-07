@@ -4,24 +4,12 @@
   <title>Deeplink</title>
 </head>
 <body>
-  <a href="app://undo" onclick="redirectToStore()">Open Undo app</a>
-  <a href="https://new.undo.be/apps/android" onclick="redirectToStore2()">Open Undo app with new.undo.be/apps/android</a>
-
-  <script>
-    function redirectToStore() {
-      setTimeout(function() {
-        window.location.href = 'https://play.google.com/store/apps/details?id=be.undo.app';
-      }, 100);
-
-      window.location.href = 'app://undo';
-    }
-    function redirectToStore2() {
-      setTimeout(function() {
-        window.location.href = 'https://play.google.com/store/apps/details?id=be.undo.app';
-      }, 100);
-
-      window.location.href = 'https://new.undo.be/apps/android';
-    }
-  </script>
+  <a href="vtbmobile://roaming">Настройки - роуминг</a><br>
+  <a href="vtbmobile://mnp">Перенос номера</a><br>
+  <a href="vtbmobile://activate-promocode">Промокод</a><br>
+  <a href="vtbmobile://promotion-details?id=vesna20">Деталка акции</a><br>
+  <a href="vtbmobile://activate-promocode?code=111">Конкретный промокод</a><br>
+  <a href="vtbmobile://top-up">Пополнение</a><br>
+  <a href="vtbmobile://order-sim">Заказ сим</a><br>
 </body>
 </html>
